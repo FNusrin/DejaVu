@@ -18,98 +18,106 @@ const data = [
     key: 1,
     title: "Love",
     content: "Fly me to the moon",
-    image: "../Images/preview.webp",
+    image: "/Images/preview.webp",
   },
   {
     key: 2,
     title: "Passion",
     content: "In search of reasons",
-    image: "../Images/2.webp",
+    image: "/Images/2.webp",
   },
   {
     key: 3,
     title: "Delusions",
     content: "A way to Stay Alive",
-    image: "../Images/3.webp",
+    image: "/Images/3.webp",
   },
   {
     key: 4,
     title: "Determination",
     content: "Never Give Up",
-    image: "../Images/1.1.webp",
+    image: "/Images/1.1.webp",
   },
   {
     key: 5,
     title: "Admiration",
     content: "In a room full of art",
-    image: "../Images/16.jpg",
+    image: "/Images/16.jpg",
   },
   {
     key: 6,
     title: "Triumph",
     content: "Success that comes with a Cost",
-    image:"../Images/19.jpg",
+    image:"/Images/19.jpg",
   },
   {
     key: 7,
     title: "Battles",
     content: "Fight for your fairytale",
-    image:  "../Images/14.jpg",
+    image:  "/Images/14.jpg",
   },
   {
     key: 8,
     title: "Regrets",
     content: "A happily never after",
-    image: "../Images/15.jpg",
+    image: "/Images/15.jpg",
   },
 ];
 const imgItem = [
   {
     key: 1,
-    image: "../Images/12.jpg",
+    image: "/Images/12.jpg",
     title: " Locker of pain",
+    content: "Some wounds never heal. We can move past it, yet some leave scars.",
     author: "PinkPanther",
   },
   {
     key: 2,
-    image: "../Images/9.jpg",
-    title: "Please",
+    image: "/Images/9.jpg",
+    title: "Galaxy",
+    content: "Broken but beautiful, the stars that are held together, out of our reach",
     author: "PinkPanther",
   },
   {
     key: 3,
-    image: "../Images/7.jpg",
+    image: "/Images/7.jpg",
     title: "Abyss",
+    content: "No way out is also a way, maybe not the best, but at least it could lead you somewhere",
     author: "PinkPanther",
   },
   {
     key: 4,
-    image: "../Images/10.jpg",
+    image: "/Images/10.jpg",
     title: " In a Room Full of Arts",
+    content: "The colors that makes every portrait different may or maynot be true ",
     author: "PinkPanther",
   },
   {
     key: 5,
-    image: "../Images/8.jpg",
+    image: "/Images/8.jpg",
     title: " Lost stars",
+    content: "At night, they bloom. And in the morning, they wither",
     author: "PinkPanther",
   },
   {
     key: 6,
-    image: "../Images/6.jpg",
+    image: "/Images/6.jpg",
     title: " Love in the city",
+    content: "In the allies,above the sky, in the middle of rain of, we pursue life",
     author: "PinkPanther",
   },
   {
     key: 7,
-    image: "../Images/11.jpg",
+    image: "/Images/11.jpg",
     title: "Soulessness",
+    content: "And we need reasons to stay, choose, and leave. A life without is just a dream",
     author: "PinkPanther",
   },
   {
     key: 8,
-    image: "../Images/5.jpg",
+    image: "/Images/5.jpg",
     title: "Make It Right",
+    content: "A day will come where we will be fine, if not, it's not just our day",
     author: "PinkPanther",
   },
 ];
@@ -171,6 +179,7 @@ function Photogrid() {
                 />
                 <div className="imgcaptions">
                   <p className="photocaptions">{items.title}</p>
+                  <p className="photocontent">{items.content}</p>
                 </div>
               </>
             ))}
