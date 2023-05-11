@@ -10,16 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.8",
-    "@emotion/styled": "^11.10.8",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.12.3",
+    "@mui/material": "^5.13.0",
     "bootstrap": "^5.2.3",
+    "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
+    "react-bootstrap-sidebar-menu": "^2.0.3",
     "react-dom": "^18.2.0",
+    "react-pro-sidebar": "^1.0.0",
     "react-responsive-masonry": "^2.1.7",
-    "react-staggered-grid": "^1.0.18"
+    "react-staggered-grid": "^1.0.18",
+    "sass": "^1.62.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

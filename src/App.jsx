@@ -6,12 +6,16 @@ import "./App.css";
 import Layout from "./Components/Layout";
 import { Facebook, GitHub, Instagram, Twitter } from "@mui/icons-material";
 import Photogrid from "./Components/Photogrid";
+import AdminSidebar from "./Components/adminSidebar";
+
 
 function App() {
   return (
     <div className="App">
       <div>
         <Layout>
+       
+        <AdminSidebar/>
           <div className="pagecontent">
           <div className="d-flex justify-content-center align-items-center p-3">
            <div className="headingabout">
@@ -36,6 +40,7 @@ function App() {
           
           <Photogrid/>
           </div>
+         
         </Layout>
       </div>
       </div>

@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import SearchIcon from "@mui/icons-material/Search";
 import { FormGroup, IconButton } from "@mui/material";
+import AdminSidebar from "./adminSidebar";
 
 // import './App.css'
 
@@ -51,7 +52,7 @@ function Layout({ children }) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
+              
       {children}
 
       {/*  // Footer Part */}
