@@ -8,13 +8,17 @@ import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
 import { ReceiptOutlined } from "@mui/icons-material";
-import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
-import BookIcon from '@mui/icons-material/Book';
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import BookIcon from "@mui/icons-material/Book";
+import CollectionsBookmarkIcon from "@mui/icons-material/CollectionsBookmark";
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import React from "react";
 function AdminSidebar() {
   const { collapseSidebar } = useProSidebar();
   return (
+    <div>
     <div id="sidebar" style={{ position: "absolute" }}>
+      
       <Sidebar style={{ height: "100vh" }}>
         <Menu>
           <MenuItem
@@ -28,14 +32,23 @@ function AdminSidebar() {
           <MenuItem icon={<HomeOutlinedIcon />}>Home</MenuItem>
           <MenuItem icon={<ReceiptOutlined />}>About</MenuItem>
           <SubMenu label="Stories" icon={<LibraryBooksIcon />}>
-          <MenuItem icon={<BookIcon />}>Featured Stories</MenuItem>
-          <MenuItem icon={<LibraryAddIcon />}>Latest Stories</MenuItem>
+            <MenuItem icon={<LibraryAddIcon />}>Add Stories</MenuItem>
+            <MenuItem icon={<CollectionsBookmarkIcon />}>Featured Stories </MenuItem>
+            <MenuItem icon={<AutoStoriesIcon/>}>Latest Stories</MenuItem>
           </SubMenu>
           <MenuItem icon={<AccountCircleIcon />}>Profile</MenuItem>
           <MenuItem icon={<SettingsIcon />}>Settings</MenuItem>
         </Menu>
       </Sidebar>
     </div>
+
+<div className="row justify-content-center">
+<div className="col-4">
+  Create New Story
+</div>
+
+</div>
+</div>
   );
 }
 

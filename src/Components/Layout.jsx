@@ -8,10 +8,20 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import SearchIcon from "@mui/icons-material/Search";
 import { FormGroup, IconButton } from "@mui/material";
 import AdminSidebar from "./adminSidebar";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+
 
 // import './App.css'
 
 function Layout({ children }) {
+  const navigateToLogin  = useNavigate();
+
+  function login(){
+    console.log("Login")
+    navigateToLogin("/login")
+  }
   return (
     <Fragment>
       {/* // Header Part */}
@@ -19,7 +29,7 @@ function Layout({ children }) {
       <Navbar bg="light" expand="lg">
         <Container fluid>
           <Navbar.Brand
-            href="#"
+            href="/"
             className="px-3"
             style={{
               fontFamily: "Fira Sans, sans-serif",
@@ -42,13 +52,16 @@ function Layout({ children }) {
               }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="#action2">About</Nav.Link>
               <Nav.Link href="#action3">Contact</Nav.Link>
+              {/* <Link to="/Login">Login</Link> */}
+              <Button className='btn btn-dark' onClick={login}>Login</Button>
             </Nav>
             <SearchIcon
               style={{ color: "black", marginLeft: "10px" }}
             ></SearchIcon>
+           
           </Navbar.Collapse>
         </Container>
       </Navbar>

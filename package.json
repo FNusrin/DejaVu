@@ -22,6 +22,7 @@
     "react-dom": "^18.2.0",
     "react-pro-sidebar": "^1.0.0",
     "react-responsive-masonry": "^2.1.7",
+    "react-router-dom": "^6.11.1",
     "react-staggered-grid": "^1.0.18",
     "sass": "^1.62.1"
   },
