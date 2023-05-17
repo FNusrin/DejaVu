@@ -67,7 +67,7 @@ function Login() {
                 placeholder="Enter Your Email"
                 onChange={(e) => {
                   setEmail(e.target.value);
-                  validatePassword(e.target.value);
+                  validateEmail(e.target.value);
                 }}
               />
               {emailError && <span>{emailError}</span>}
