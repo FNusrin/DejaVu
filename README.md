@@ -4,7 +4,7 @@ ReactJS Version 18.2.0
 
 credits: https://storyhub-agency-redq.vercel.app/
 
-![Home Page](Images/dejavuscreenshot.png)
+![Home Page](public/Images/dejavuscreenshot.png)
 
 
 ## Features:
