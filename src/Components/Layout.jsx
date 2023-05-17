@@ -7,7 +7,6 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import SearchIcon from "@mui/icons-material/Search";
 import { FormGroup, IconButton } from "@mui/material";
-import AdminSidebar from "./adminSidebar";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
